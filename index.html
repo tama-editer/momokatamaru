@@ -6,9 +6,10 @@
     <title>Momoka Tamaru | Video Editor</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
         body {
-            font-family: 'Bangers', cursive;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #ffe600;
@@ -24,6 +25,7 @@
         header h1 {
             margin: 0;
             font-size: 3rem;
+            font-family: 'Bangers', cursive;
         }
         nav ul {
             list-style: none;
@@ -40,6 +42,12 @@
             color: white;
             font-weight: bold;
             font-size: 1.2rem;
+        }
+        nav ul li a:hover {
+            color: #ffe600;
+            text-shadow: 2px 2px #000;
+            transform: scale(1.1);
+            transition: 0.3s;
         }
         .hero {
             background: url('background-image.jpg') no-repeat center center/cover;
@@ -61,6 +69,13 @@
             margin: 5px;
             display: inline-block;
             border-radius: 5px;
+            font-size: 1.2rem;
+            font-family: 'Bangers', cursive;
+        }
+        .cta-buttons a:hover {
+            background-color: #333;
+            color: #ffcc00;
+            transition: 0.3s;
         }
         .section {
             padding: 40px 20px;
@@ -83,6 +98,12 @@
             padding: 10px 20px;
             border-radius: 10px;
             box-shadow: 5px 5px 0px #333;
+            font-family: 'Bangers', cursive;
+        }
+        .section p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            text-align: left;
         }
         .portfolio img {
             width: 100%;
@@ -97,12 +118,33 @@
             margin: 20px 0;
             font-size: 1.5rem;
         }
+        .testimonials p::before {
+            content: '\201C';
+            font-size: 2rem;
+            vertical-align: top;
+            color: #ff5733;
+        }
+        .testimonials p::after {
+            content: '\201D';
+            font-size: 2rem;
+            vertical-align: bottom;
+            color: #ff5733;
+        }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 20px 0;
             margin-top: 40px;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
     </style>
     <meta name="google-site-verification" content="3dhO_pHcOAbjDoN9kavfe16OzYpjKErbSWfyLtYuILc" />
@@ -128,32 +170,32 @@
         </div>
     </section>
 
-    <section class="about section">
+    <section class="about section fade-in">
         <h2>About Me</h2>
         <p>【経歴】<br>・テレビ番組制作の専門学校を卒業<br>・番組制作会社に2年勤務<br>・2023年から、フリーランスの映像編集者として稼働</p>
         <p>【使用ソフト】<br>・Premiere Pro（5年）<br>・After Effects（2年）<br>・Photoshop, Illustrator</p>
     </section>
 
-    <section class="services section" id="services">
+    <section class="services section fade-in" id="services">
         <h2>Services</h2>
         <p>プロモーション動画: 商品やサービスの魅力を伝える映像。<br>YouTube動画編集: 効果的な編集でチャンネルの成長をサポート。<br>ショート動画制作: TikTokやInstagramに最適な動画編集。<br>カスタム編集: クライアントのニーズに応じたオーダーメイド編集。</p>
         <p>基本的に料金は依頼者様の予算内で出来る範囲の編集をする形でお引き受けさせていただいておりますのでお気軽にご相談ください！</p>
     </section>
 
-    <section class="portfolio section" id="portfolio">
+    <section class="portfolio section fade-in" id="portfolio">
         <h2>Portfolio</h2>
         <a href="https://youtu.be/-m2XaqLv5IY?si=BAJP5_BPiJ198f7A" target="_blank">
             <img src="portfolio-thumbnail.jpg" alt="Portfolio Thumbnail">
         </a>
     </section>
 
-    <section class="testimonials section">
+    <section class="testimonials section fade-in">
         <h2>Client Feedback</h2>
-        <p>「いつも丁寧なお仕事をありがとうございます。<br>一つずつ丁寧に進めてくださっているのがよくわかります。」</p>
-        <p>「初回の案件で土台がないため難しいご依頼となりましたが、<br>丁寧な作業と独自の工夫をしていただけて満足のいく仕上がりの動画となっていました。」</p>
+        <p>いつも丁寧なお仕事をありがとうございます。<br>一つずつ丁寧に進めてくださっているのがよくわかります。</p>
+        <p>初回の案件で土台がないため難しいご依頼となりましたが、<br>丁寧な作業と独自の工夫をしていただけて満足のいく仕上がりの動画となっていました。</p>
     </section>
 
-    <section class="contact section" id="contact">
+    <section class="contact section fade-in" id="contact">
         <h2>Contact</h2>
         <form action="mailto:m.tamaru123@gmail.com" method="post" enctype="text/plain">
             <input type="text" name="name" placeholder="Your Name" required><br>
