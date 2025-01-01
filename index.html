@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momoka Tamaru | Video Editor</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+        body {
+            font-family: 'Bangers', cursive;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe600;
+            color: #333;
+        }
+        header {
+            background-color: #ff5733;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .hero {
+            background: url('background-image.jpg') no-repeat center center/cover;
+            text-align: center;
+            color: white;
+            padding: 100px 20px;
+        }
+        .hero h2 {
+            font-size: 3rem;
+        }
+        .cta-buttons {
+            margin-top: 20px;
+        }
+        .cta-buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #ffcc00;
+            padding: 10px 20px;
+            margin: 5px;
+            display: inline-block;
+            border-radius: 5px;
+        }
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+            margin: 20px auto;
+            max-width: 1200px;
+            border: 4px solid #333;
+            background: #fffcf7;
+            box-shadow: 5px 5px 0px #333;
+            position: relative;
+        }
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ff5733;
+            text-shadow: 2px 2px #000;
+            display: inline-block;
+            background: yellow;
+            border: 3px solid #333;
+            padding: 10px 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 0px #333;
+        }
+        .portfolio img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border-radius: 10px;
+            border: 4px solid #333;
+            box-shadow: 5px 5px 0px #333;
+        }
+        .testimonials p {
+            font-style: italic;
+            margin: 20px 0;
+            font-size: 1.5rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Momoka Tamaru</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h2>Editing Videos with Heart</h2>
+        <div class="cta-buttons">
+            <a href="#portfolio">View Portfolio</a>
+            <a href="#contact">Contact Me</a>
+        </div>
+    </section>
+
+    <section class="about section">
+        <h2>About Me</h2>
+        <p>【経歴】<br>・テレビ番組制作の専門学校を卒業<br>・番組制作会社に2年勤務<br>・2023年から、フリーランスの映像編集者として稼働</p>
+        <p>【使用ソフト】<br>・Premiere Pro（5年）<br>・After Effects（2年）<br>・Photoshop, Illustrator</p>
+    </section>
+
+    <section class="services section" id="services">
+        <h2>Services</h2>
+        <p>「プロモーション動画: 商品やサービスの魅力を伝える映像。」<br>「YouTube動画編集: 効果的な編集でチャンネルの成長をサポート。」<br>「ショート動画制作: TikTokやInstagramに最適な動画編集。」<br>「カスタム編集: クライアントのニーズに応じたオーダーメイド編集。」</p>
+        <p>基本的に料金は依頼者様の予算内で出来る範囲の編集をする形でお引き受けさせていただいておりますのでお気軽にご相談ください！</p>
+    </section>
+
+    <section class="portfolio section" id="portfolio">
+        <h2>Portfolio</h2>
+        <a href="https://youtu.be/-m2XaqLv5IY?si=BAJP5_BPiJ198f7A" target="_blank">
+            <img src="portfolio-thumbnail.jpg" alt="Portfolio Thumbnail">
+        </a>
+    </section>
+
+    <section class="testimonials section">
+        <h2>Client Feedback</h2>
+        <p>「いつも丁寧なお仕事をありがとうございます。<br>一つずつ丁寧に進めてくださっているのがよくわかります。」</p>
+        <p>「初回の案件で土台がないため難しいご依頼となりましたが、<br>丁寧な作業と独自の工夫をしていただけて満足のいく仕上がりの動画となっていました。」</p>
+    </section>
+
+    <section class="contact section" id="contact">
+        <h2>Contact</h2>
+        <form action="mailto:m.tamaru123@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Momoka Tamaru</p>
+    </footer>
+</body>
+</html>
